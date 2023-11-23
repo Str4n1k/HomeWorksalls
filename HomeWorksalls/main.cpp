@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 //#define TASK_1
 //#define TASK_2
@@ -24,7 +24,7 @@ void main()
 		}
 
 	}
-	std::cout << " ×èñåë " << x << std::endl;
+	std::cout << " Ð§Ð¸ÑÐµÐ» " << x << std::endl;
 #endif // TASK_1
 
 #ifdef TASK_2
@@ -39,13 +39,13 @@ void main()
 			x++;
 		}
 	}
-	std::cout << " ×èñåë " << x << std::endl;
+	std::cout << " Ð§Ð¸ÑÐµÐ» " << x << std::endl;
 
 #endif // TASK_2
 
 #ifdef TASK_3
 	int a = 0, b = 0, c = 0, d = 0;
-	std::cout << "Ââåäèòå ëþáîå öåëîå ÷èñëî :" << std::endl; std::cin >> a;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»ÑŽÐ±Ð¾Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ :" << std::endl; std::cin >> a;
 	while (a > 0)
 	{
 		b = a % 10;
@@ -56,12 +56,12 @@ void main()
 		}
 		a = a / 10;
 	}
-	std::cout << "Âàøå ÷èñëî :" << d << std::endl;
+	std::cout << "Ð’Ð°ÑˆÐµ Ñ‡Ð¸ÑÐ»Ð¾ :" << d << std::endl;
 #endif // TASK_3
 
 #ifdef TASK_4
 	int a, b;
-	std::cout << "Ââåäèòå ëþáîå öåëîå ÷èñëî :" << std::endl; std::cin >> a;
+	std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»ÑŽÐ±Ð¾Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ :" << std::endl; std::cin >> a;
 	for (int i = a - 1; i > 1; i--)
 	{
 		b = i;
@@ -75,7 +75,7 @@ void main()
 
 #ifdef TASK_6
 	int a = 0, b = 0;
-	cout << "Ââåäèòå ëþáîå öåëîå ÷èñëî :";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð»ÑŽÐ±Ð¾Ðµ Ñ†ÐµÐ»Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾ :";
 	cin >> a;
 	bool c;
 	for (int i = 1; i <= a; i++)
@@ -89,7 +89,7 @@ void main()
 
 #ifdef TASK_7
 	int a = 0, b,;
-	cout << "Ââåäèòå 2 ÷èñëå ÷åðåç ïðîáåë :";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 2 Ñ‡Ð¸ÑÐ»Ðµ Ñ‡ÐµÑ€ÐµÐ· Ð¿Ñ€Ð¾Ð±ÐµÐ» :";
 	cin >> a >> b;
 	bool c, d;
 	for (int i = 1; i <= a; i++)
