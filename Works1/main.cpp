@@ -1,15 +1,15 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <conio.h>
 using namespace std;
 
 #ifdef ENUM_FOR_TASK_1
 enum Userchoice
 {
-	Выход = 0,
-	Колличество_цифр = 1,
-	Сумма_цифр = 2,
-	Среднее_арифметическое = 3,
-	Колличество_нулей = 4
+	Р’С‹С…РѕРґ = 0,
+	РљРѕР»Р»РёС‡РµСЃС‚РІРѕ_С†РёС„СЂ = 1,
+	РЎСѓРјРјР°_С†РёС„СЂ = 2,
+	РЎСЂРµРґРЅРµРµ_Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ = 3,
+	РљРѕР»Р»РёС‡РµСЃС‚РІРѕ_РЅСѓР»РµР№ = 4
 };
 #endif // ENUM_FOR_TASK_1
 #ifdef DEFINE_FOR_TASK_2
@@ -38,7 +38,7 @@ void main()
 
 #ifdef TASK_1
 	int a, e, b, x = 0, c = 0, d, sum = 0,choice,enumUserchoice;
-	std::cout << "Введите число :" << std::endl; std::cin >> a;
+	std::cout << "Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ :" << std::endl; std::cin >> a;
 	b = a;
 	e = a;
 	while (a)
@@ -64,39 +64,39 @@ void main()
 	}
 	cout << endl;
 
-	std::cout << "Выберите :" << endl <<
-		"0 = Выход" << endl <<
-		"1 = Колличество цифр" << endl <<
-		"2 = Сумма цифр" << endl <<
-		"3 = Среднее Арифметическое" << endl <<
-		"4 = Колличество нулей" << endl;
+	std::cout << "Р’С‹Р±РµСЂРёС‚Рµ :" << endl <<
+		"0 = Р’С‹С…РѕРґ" << endl <<
+		"1 = РљРѕР»Р»РёС‡РµСЃС‚РІРѕ С†РёС„СЂ" << endl <<
+		"2 = РЎСѓРјРјР° С†РёС„СЂ" << endl <<
+		"3 = РЎСЂРµРґРЅРµРµ РђСЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ" << endl <<
+		"4 = РљРѕР»Р»РёС‡РµСЃС‚РІРѕ РЅСѓР»РµР№" << endl;
 	std::cin >> choice;
 	enumUserchoice = (enum Userchoice)choice;
 	switch (enumUserchoice)
 	{
-	case Выход:
-		cout <<"Вы вышли " << endl;
+	case Р’С‹С…РѕРґ:
+		cout <<"Р’С‹ РІС‹С€Р»Рё " << endl;
 		break;
-	case Колличество_цифр:
-		cout << "Колличество цифр: " << x << endl;
+	case РљРѕР»Р»РёС‡РµСЃС‚РІРѕ_С†РёС„СЂ:
+		cout << "РљРѕР»Р»РёС‡РµСЃС‚РІРѕ С†РёС„СЂ: " << x << endl;
 		break;
-	case Сумма_цифр:
-		cout << "Сумма цифр: " << sum << endl;
+	case РЎСѓРјРјР°_С†РёС„СЂ:
+		cout << "РЎСѓРјРјР° С†РёС„СЂ: " << sum << endl;
 		break;
-	case Среднее_арифметическое:
-		cout << "Среднее арифметическое: " << (double)sum / d << endl;
+	case РЎСЂРµРґРЅРµРµ_Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ:
+		cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ: " << (double)sum / d << endl;
 		break;
-	case Колличество_нулей:
-		cout << "Колличество нулей: " << c << endl;
+	case РљРѕР»Р»РёС‡РµСЃС‚РІРѕ_РЅСѓР»РµР№:
+		cout << "РљРѕР»Р»РёС‡РµСЃС‚РІРѕ РЅСѓР»РµР№: " << c << endl;
 		break;
 	default:
-		cout << "Неверный выбор" << endl;
+		cout << "РќРµРІРµСЂРЅС‹Р№ РІС‹Р±РѕСЂ" << endl;
 		break;
 	}
 #endif // TASK_1
 #ifdef TASK_2
 	int n;
-	cout << "Введите размер доски: "; cin >> n;
+	cout << "Р’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РґРѕСЃРєРё: "; cin >> n;
 	n++;
 	setlocale(LC_ALL, "C");
 	for (int i = 0; i <= n; i++)
@@ -118,8 +118,8 @@ void main()
 #endif // TASK_2
 
 	int human1, sum, count;
-	std::cout << "Добро пожаловать в кафетерий" << endl;
-	std::cout << "Сколько будет человек?" << endl; std::cin >> count;
+	std::cout << "Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РєР°С„РµС‚РµСЂРёР№" << endl;
+	std::cout << "РЎРєРѕР»СЊРєРѕ Р±СѓРґРµС‚ С‡РµР»РѕРІРµРє?" << endl; std::cin >> count;
 	std::cout << count << endl;
 
 
